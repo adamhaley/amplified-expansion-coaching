@@ -1,0 +1,673 @@
+{% extends "layout.html" %}
+
+{% block mainContent %}
+
+<section
+  id="relume"
+  class="flex w-full items-center border-b border-border-primary bg-background-primary lg:min-h-18 lg:px-[5%]"
+>
+  <div
+    class="mx-auto size-full lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr] lg:items-center lg:justify-between lg:gap-4"
+  >
+    <div
+      class="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0"
+    >
+      <a href="#"
+        ><img
+          src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+          alt="Logo image"
+      /></a>
+      <div class="flex items-center gap-4 lg:hidden">
+        <div>
+          <button
+            class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative w-full px-4 py-1"
+            title="Join"
+          >
+            Join
+          </button>
+        </div>
+        <button
+          class="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
+        >
+          <span class="my-[3px] h-0.5 w-6 bg-black"></span
+          ><span class="my-[3px] h-0.5 w-6 bg-black"></span
+          ><span class="my-[3px] h-0.5 w-6 bg-black"></span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+      style="height:var(--height-closed, 0)"
+    >
+      <a
+        href="#"
+        class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+        >Home</a
+      ><a
+        href="#"
+        class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+        >About Us</a
+      ><a
+        href="#"
+        class="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+        >Services</a
+      >
+      <div>
+        <button
+          class="flex w-full items-center justify-center gap-4 py-3 text-center text-md lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2 lg:text-base"
+        >
+          <span>Resources</span
+          ><span
+            ><svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                fill="currentColor"
+              ></path></svg
+          ></span>
+        </button>
+        <nav
+          class="bg-background-primary lg:absolute lg:z-50 lg:border lg:border-border-primary lg:p-2 lg:[--y-close:25%]"
+          style="visibility:hidden;opacity:var(--opacity-close, 0);display:none;transform:translateY(var(--y-close, 0%))"
+        >
+          <a
+            href="#"
+            class="block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+            >Blog</a
+          ><a
+            href="#"
+            class="block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+            >Testimonials</a
+          ><a
+            href="#"
+            class="block py-3 text-center lg:px-4 lg:py-2 lg:text-left"
+            >Contact Us</a
+          >
+        </nav>
+      </div>
+    </div>
+    <div class="hidden justify-self-end lg:block">
+      <button
+        class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-2"
+        title="Join"
+      >
+        Join
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="relume" class="px-[5%] py-16 md:py-24 lg:py-28">
+  <div class="container">
+    <div class="w-full max-w-lg">
+      <p class="mb-3 font-semibold md:mb-4">Connect</p>
+      <h1 class="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
+        Join Our Community
+      </h1>
+      <p class="md:text-md">
+        Experience growth, support, and inspiration by joining the Amplified
+        Expansion Coaching network today.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-4 md:mt-8">
+        <button
+          class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-3"
+          title="Sign Up"
+        >
+          Sign Up</button
+        ><button
+          class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3"
+          title="Learn More"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="relume" class="px-[5%] py-16 md:py-24 lg:py-28">
+  <div class="container">
+    <div
+      class="rb-12 mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20"
+    >
+      <h2 class="text-4xl font-bold leading-[1.2] md:text-5xl lg:text-6xl">
+        Unlock Your Potential with Our Exclusive Network of Visionaries and
+        Thinkers
+      </h2>
+    </div>
+    <div
+      class="grid grid-cols-1 items-start justify-center gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12"
+    >
+      <div class="flex w-full flex-col items-center text-center">
+        <div class="rb-6 mb-6 md:mb-8">
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+            alt="Relume placeholder image"
+          />
+        </div>
+        <h3 class="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+          Connect, Collaborate, and Grow Together in a Supportive Community
+        </h3>
+        <p>
+          Gain access to a wealth of exclusive resources tailored for your
+          growth.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+          <button
+            class="focus-visible:ring-border-primary inline-flex items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 text-text-primary gap-2 p-0"
+          >
+            Join<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex w-full flex-col items-center text-center">
+        <div class="rb-6 mb-6 md:mb-8">
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+            alt="Relume placeholder image"
+          />
+        </div>
+        <h3 class="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+          Be the First to Know About Upcoming Events and Workshops
+        </h3>
+        <p>
+          Enjoy early access to transformative events that elevate your journey.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+          <button
+            class="focus-visible:ring-border-primary inline-flex items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 text-text-primary gap-2 p-0"
+          >
+            Sign Up<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex w-full flex-col items-center text-center">
+        <div class="rb-6 mb-6 md:mb-8">
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+            alt="Relume placeholder image"
+          />
+        </div>
+        <h3 class="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
+          Experience Unmatched Community Support for Your Personal and
+          Professional Growth
+        </h3>
+        <p>
+          Join a vibrant community that encourages collaboration and shared
+          success.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
+          <button
+            class="focus-visible:ring-border-primary inline-flex items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-0 text-text-primary gap-2 p-0"
+          >
+            Connect<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="relume" class="px-[5%] py-16 md:py-24 lg:py-28">
+  <div class="container">
+    <div
+      class="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center"
+    >
+      <div>
+        <h2
+          class="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl"
+        >
+          Join Our Vibrant Community
+        </h2>
+        <p class="md:text-md">
+          Become part of a transformative network that inspires growth and
+          connection among like-minded individuals.
+        </p>
+        <div class="mt-6 w-full max-w-sm md:mt-8">
+          <form
+            class="rb-4 mb-4 grid max-w-sm grid-cols-1 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-4"
+          >
+            <div class="relative flex w-full items-center">
+              <input
+                type="email"
+                class="flex size-full min-h-11 border border-border-primary bg-background-primary py-2 align-middle file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 px-3"
+                id="email"
+                placeholder="Your Email Address"
+              />
+            </div>
+            <button
+              class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-3"
+              title="Join Now"
+            >
+              Join Now
+            </button>
+          </form>
+          <div>
+            <p class="text-xs">
+              By clicking Sign Up you're confirming that you agree with our
+              <a href="#" class="underline">Terms and Conditions</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+          class="w-full object-cover"
+          alt="Relume placeholder image"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="relume" class="px-[5%] py-16 md:py-24 lg:py-28">
+  <div
+    class="container grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20"
+  >
+    <div>
+      <h2 class="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
+        FAQs
+      </h2>
+      <p class="md:text-md">
+        Discover the answers to your most pressing questions about our network
+        and membership.
+      </p>
+      <div class="mt-6 md:mt-8">
+        <button
+          class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3"
+          title="Contact"
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+    <div class="" data-orientation="vertical">
+      <div
+        data-state="closed"
+        data-orientation="vertical"
+        class="border-b border-border-primary first:border-t"
+      >
+        <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
+          <button
+            type="button"
+            aria-controls="radix-:R36:"
+            aria-expanded="false"
+            data-state="closed"
+            data-orientation="vertical"
+            id="radix-:R16:"
+            class="flex flex-1 items-center justify-between py-4 font-bold transition-all focus-visible:outline-none focus-visible:ring-0 [&amp;[data-state=open]&gt;svg]:rotate-180 md:py-5 md:text-md"
+            data-radix-collection-item=""
+          >
+            What is the network?<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              class="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </h3>
+        <div
+          data-state="closed"
+          id="radix-:R36:"
+          hidden=""
+          role="region"
+          aria-labelledby="radix-:R16:"
+          data-orientation="vertical"
+          class="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+          style="--radix-accordion-content-height:var(--radix-collapsible-content-height);--radix-accordion-content-width:var(--radix-collapsible-content-width)"
+        ></div>
+      </div>
+      <div
+        data-state="closed"
+        data-orientation="vertical"
+        class="border-b border-border-primary first:border-t"
+      >
+        <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
+          <button
+            type="button"
+            aria-controls="radix-:R3a:"
+            aria-expanded="false"
+            data-state="closed"
+            data-orientation="vertical"
+            id="radix-:R1a:"
+            class="flex flex-1 items-center justify-between py-4 font-bold transition-all focus-visible:outline-none focus-visible:ring-0 [&amp;[data-state=open]&gt;svg]:rotate-180 md:py-5 md:text-md"
+            data-radix-collection-item=""
+          >
+            How do I join?<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              class="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </h3>
+        <div
+          data-state="closed"
+          id="radix-:R3a:"
+          hidden=""
+          role="region"
+          aria-labelledby="radix-:R1a:"
+          data-orientation="vertical"
+          class="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+          style="--radix-accordion-content-height:var(--radix-collapsible-content-height);--radix-accordion-content-width:var(--radix-collapsible-content-width)"
+        ></div>
+      </div>
+      <div
+        data-state="closed"
+        data-orientation="vertical"
+        class="border-b border-border-primary first:border-t"
+      >
+        <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
+          <button
+            type="button"
+            aria-controls="radix-:R3e:"
+            aria-expanded="false"
+            data-state="closed"
+            data-orientation="vertical"
+            id="radix-:R1e:"
+            class="flex flex-1 items-center justify-between py-4 font-bold transition-all focus-visible:outline-none focus-visible:ring-0 [&amp;[data-state=open]&gt;svg]:rotate-180 md:py-5 md:text-md"
+            data-radix-collection-item=""
+          >
+            What are the benefits?<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              class="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </h3>
+        <div
+          data-state="closed"
+          id="radix-:R3e:"
+          hidden=""
+          role="region"
+          aria-labelledby="radix-:R1e:"
+          data-orientation="vertical"
+          class="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+          style="--radix-accordion-content-height:var(--radix-collapsible-content-height);--radix-accordion-content-width:var(--radix-collapsible-content-width)"
+        ></div>
+      </div>
+      <div
+        data-state="closed"
+        data-orientation="vertical"
+        class="border-b border-border-primary first:border-t"
+      >
+        <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
+          <button
+            type="button"
+            aria-controls="radix-:R3i:"
+            aria-expanded="false"
+            data-state="closed"
+            data-orientation="vertical"
+            id="radix-:R1i:"
+            class="flex flex-1 items-center justify-between py-4 font-bold transition-all focus-visible:outline-none focus-visible:ring-0 [&amp;[data-state=open]&gt;svg]:rotate-180 md:py-5 md:text-md"
+            data-radix-collection-item=""
+          >
+            Is there a fee?<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              class="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </h3>
+        <div
+          data-state="closed"
+          id="radix-:R3i:"
+          hidden=""
+          role="region"
+          aria-labelledby="radix-:R1i:"
+          data-orientation="vertical"
+          class="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+          style="--radix-accordion-content-height:var(--radix-collapsible-content-height);--radix-accordion-content-width:var(--radix-collapsible-content-width)"
+        ></div>
+      </div>
+      <div
+        data-state="closed"
+        data-orientation="vertical"
+        class="border-b border-border-primary first:border-t"
+      >
+        <h3 data-orientation="vertical" data-state="closed" class="flex w-full">
+          <button
+            type="button"
+            aria-controls="radix-:R3m:"
+            aria-expanded="false"
+            data-state="closed"
+            data-orientation="vertical"
+            id="radix-:R1m:"
+            class="flex flex-1 items-center justify-between py-4 font-bold transition-all focus-visible:outline-none focus-visible:ring-0 [&amp;[data-state=open]&gt;svg]:rotate-180 md:py-5 md:text-md"
+            data-radix-collection-item=""
+          >
+            Can I cancel anytime?<svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 15 15"
+              class="size-7 shrink-0 text-text-primary transition-transform duration-300 md:size-8"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </h3>
+        <div
+          data-state="closed"
+          id="radix-:R3m:"
+          hidden=""
+          role="region"
+          aria-labelledby="radix-:R1m:"
+          data-orientation="vertical"
+          class="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+          style="--radix-accordion-content-height:var(--radix-collapsible-content-height);--radix-accordion-content-width:var(--radix-collapsible-content-width)"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="relume" class="px-[5%] py-16 md:py-24 lg:py-28">
+  <div class="container">
+    <div
+      class="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center"
+    >
+      <div>
+        <h2
+          class="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl"
+        >
+          Join Our Vibrant Community Today
+        </h2>
+        <p class="md:text-md">
+          Become part of a supportive network that empowers you to grow and
+          thrive together.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-4 md:mt-8">
+          <button
+            class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-6 py-3"
+            title="Join"
+          >
+            Join</button
+          ><button
+            class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3"
+            title="Learn More"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+          class="w-full object-cover"
+          alt="Relume placeholder image"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="relume" class="px-[5%] py-12 md:py-18 lg:py-20">
+  <div class="container">
+    <div
+      class="grid grid-cols-1 items-start justify-between gap-x-[8vw] gap-y-12 pb-12 sm:gap-y-10 md:gap-y-14 md:pb-18 lg:grid-cols-[1fr_0.5fr] lg:pb-20"
+    >
+      <div class="flex flex-col items-start">
+        <a href="#" class="mb-8"
+          ><img
+            src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+            alt="Logo image"
+            class="inline-block"
+        /></a>
+      </div>
+      <div class="max-w-md lg:min-w-[25rem]">
+        <p class="mb-3 font-semibold md:mb-4">Join</p>
+        <form
+          class="mb-3 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-y-4 md:gap-4"
+        >
+          <div class="relative flex w-full items-center">
+            <input
+              type="email"
+              class="flex size-full min-h-11 border border-border-primary bg-background-primary py-2 align-middle file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 px-3"
+              id="email"
+              placeholder="Your Email Here"
+              value=""
+            />
+          </div>
+          <button
+            class="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-5 py-2"
+            title="Join"
+          >
+            Join
+          </button>
+        </form>
+        <p class="text-xs">By subscribing, you accept our Privacy Policy.</p>
+      </div>
+    </div>
+    <div class="h-px w-full bg-black"></div>
+    <div
+      class="flex flex-col items-start justify-start pb-4 pt-6 text-sm md:flex-row md:items-center md:justify-between md:pb-0 md:pt-8 md:text-center"
+    >
+      <ul
+        class="grid grid-flow-row grid-cols-[max-content] gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0 lg:justify-center"
+      >
+        <li class="underline decoration-black underline-offset-1">
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li class="underline decoration-black underline-offset-1">
+          <a href="#">Terms of Use</a>
+        </li>
+        <li class="underline decoration-black underline-offset-1">
+          <a href="#">Cookie Settings</a>
+        </li>
+      </ul>
+      <p>© 2024 Amplified Expansion Coaching. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}
