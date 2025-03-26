@@ -17,12 +17,47 @@
                     <div class="text-center px-4">
                         <h1 class="mx-auto my-0 text-uppercase" style="white-space: nowrap; font-size: clamp(2rem, 5vw, 6rem); padding: 0 1rem;">Amplified Expansion</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-size: clamp(1rem, 2vw, 2rem);">Coming soon..</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
+                        <form class="d-flex flex-column align-items-center gap-3" style="max-width: 500px; margin: 0 auto;" id="emailForm">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" required id="emailInput">
+                                <button class="btn btn-primary" type="submit">Enter</button>
+                            </div>
+                            <div id="formMessage" class="text-white" style="display: none;"></div>
+                        </form>
                     </div>
                 </div>
             </div>
         </header>
 
-</body>
-
+        <!-- Add jQuery and form handling script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#emailForm').on('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = $('#emailInput').val();
+                    const $formMessage = $('#formMessage');
+                    
+                    $.ajax({
+                        type: 'POST',
+                        url: 'submit_email.php',
+                        data: { email: email },
+                        success: function(response) {
+                            if (response.success) {
+                                $formMessage.removeClass('text-danger').addClass('text-success').html(response.message).show();
+                                $('#emailInput').val('');
+                            } else {
+                                $formMessage.removeClass('text-success').addClass('text-danger').html(response.message).show();
+                            }
+                        },
+                        error: function() {
+                            $formMessage.removeClass('text-success').addClass('text-danger')
+                                .html('An error occurred. Please try again later.').show();
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
 </html>
