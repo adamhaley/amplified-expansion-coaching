@@ -11214,43 +11214,44 @@ CIRCLES
   z-index: 1;
 }
 
+.circle-wrapper {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+   display: flex;
+  align-items: center; /* Align circles by vertical center */
+}
+
 .circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   position: absolute;
-  /* box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3); */
-  outline: 1px solid rgba(128, 128, 128, 0.5);
-
-  outline-offset: -5px; 
-  z-index: 0;
+  /* border: 1px solid rgba(128, 128, 128, 0.5); */
+  
+  z-index: 0.1;
 }
 
 #circle1 {
-  /*transform: translate(0, 0);*/
-  transform: scale(0.5);
   left: 300px;
-  z-index: 0;
 }
 
 #circle2 {
-  /*transform: translate(100px, 0);*/
-  transform: scale(2);
   left: 100px;
-  z-index: 0;
+  width: 200px;
+  height: 200px;
 }
 
 #circle3 {
-  /*transform: translate(220px, 0);*/
-  transform: scale(3);
   left: 220px;
-  z-index: 0;
+  width: 300px;
+  height: 300px;
 }
 
 #circle4 {
-  transform: translate(250px, 0);
+  width: 400px;
+  height: 400px;
 }
 
 #circle5 {
-  transform: translate(300px, 0);
 }
