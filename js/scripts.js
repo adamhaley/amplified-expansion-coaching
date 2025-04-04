@@ -52,3 +52,60 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Booking form submission
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.getElementById('submitBooking')) {
+        document.getElementById('submitBooking').addEventListener('click', function () {
+            const form = document.getElementById('bookingForm');
+            
+            // Basic form validation
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real application, you would send this data to your server
+            // For demo purposes, we'll just show a success message
+            
+            // Clear the form
+            form.reset();
+            
+            // Display success message
+            const modalBody = document.querySelector('#bookingModal .modal-body');
+            const originalContent = modalBody.innerHTML;
+            
+            modalBody.innerHTML = `
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                    <h4 class="mt-3">Booking Successful!</h4>
+                    <p>Thank you, ${name}! We've received your session request for ${date} (${time}).</p>
+                    <p>We'll contact you at ${email} within 24 hours to confirm your appointment.</p>
+                </div>
+            `;
+            
+            // Change footer button to close only
+            const modalFooter = document.querySelector('#bookingModal .modal-footer');
+            const originalFooter = modalFooter.innerHTML;
+            
+            modalFooter.innerHTML = `
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            `;
+            
+            // Reset modal when hidden
+            const bookingModal = document.getElementById('bookingModal');
+            bookingModal.addEventListener('hidden.bs.modal', function () {
+                modalBody.innerHTML = originalContent;
+                modalFooter.innerHTML = originalFooter;
+            }, { once: true });
+        });
+    }
+});
