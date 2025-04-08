@@ -2,14 +2,32 @@ name: Deploy
 
 on:
   push:
-    branches: [ staging ]
+    branches:  
+      - master
+      - staging
   pull_request:
-    branches: [ staging ]
+    branches: 
+      - master
+      - staging
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Set target directory
+        id: set-dir
+        run: |
+          case "${{ github.ref_name }}" in
+            master)
+              echo "target_dir=public_html" >> $GITHUB_OUTPUT
+              ;;
+            staging)
+              echo "target_dir=staging" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              echo "target_dir=unknown" >> $GITHUB_OUTPUT
+              ;;
+          esac
       - uses: actions/checkout@v3
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.2.1
@@ -18,5 +36,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
-            cd staging
+            cd ${{ steps.set-dir.outputs.target_dir }}
             .scripts/deploy.sh
