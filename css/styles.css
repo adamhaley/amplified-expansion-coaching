@@ -11205,6 +11205,38 @@ body {
 }
 
 /**
+Back to Top Link
+*/
+.back-to-top-link {
+  cursor: pointer;
+  margin-right: 0.2em;
+  margin-top: 0.5em;
+  width: 2em;
+  height: 2em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+  z-index: 2000;
+  opacity: 0;
+  transition: all ease-in-out 0.2s;
+}
+.back-to-top-link.in {
+  display: block;
+}
+.back-to-top-link.visible {
+  opacity: 1;
+}
+.back-to-top-link svg {
+  width: 80%;
+  height: 80%;
+}
+
+.back-to-top-link path{ 
+  fill: var(--bs-white-rgb);
+}
+
+/**
 CIRCLES
 */
 #circle-container {
@@ -11233,6 +11265,9 @@ CIRCLES
   
   z-index: 0.1;
 }
+
+
+
 
 #circle1 {
   left: 300px;
