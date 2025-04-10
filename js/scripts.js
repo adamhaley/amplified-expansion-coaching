@@ -7,7 +7,42 @@
 // Scripts
 // 
 
+function detectScrollPos() {
+	let scrollPos = window.scrollY;
+	let backToTop = document.querySelector('.back-to-top-link');
+	console.log(backToTop);
+	console.log('scrollPos: ' + scrollPos);
+	if(scrollPos > 100) {
+		backToTop.classList.add('in');
+		setTimeout(function() {
+			backToTop.classList.add('visible');
+		},10);
+	} else {
+		backToTop.classList.remove('visible');
+		backToTop.addEventListener('transitionend', function() {
+			backToTop.classList.remove('in');
+		}, {
+			capture: false,
+			once: true,
+			passive: false
+		});
+	}
+}
+
+
+
+
 window.addEventListener('DOMContentLoaded', event => {
+
+	var timeId2 = null;
+    function startScroll() {
+		clearTimeout(timeId2);
+		timeId2 = setTimeout(detectScrollPos, 250);
+	}
+
+	window.addEventListener('scroll', startScroll);
+
+
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -109,3 +144,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
