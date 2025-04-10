@@ -53,8 +53,8 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-black-rgb: 0, 0, 0;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-white-rgb: 255, 255, 255;
+  --bs-white-rgb: #C7CBCD;
+  --bs-white-rgb: #C7CBCD;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
@@ -4235,7 +4235,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  --bs-card-bg: #C7CBCD;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -10983,7 +10983,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #C7CBCD;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11032,7 +11032,7 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #C7CBCD;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000;
