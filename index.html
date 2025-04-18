@@ -105,15 +105,18 @@
                 <!-- Latest Blog Template -->
                 <script id="latest-blog-template" type="text/x-handlebars-template">
                     <!-- First Blog Post -->
+
+                                <h4>Latest Blog Posts</h4>
                     <div class="row gx-0 mb-3 mb-lg-4 align-items-center">
                         <div class="col-xl-8 col-lg-7">
                             <div class="featured-text text-center text-lg-left">
-                                <h4>Latest Blog Post</h4>
                                 <h5 class="text-white-50">{{data.[0].title}}</h5>
                                 <p class="text-white-50 mb-0">{{{data.[0].summary}}}</p>
                                 <p class="small text-muted mt-2">{{formatDate data.[0].date}}</p>
                                 <div class="mt-3">
+                                    <!--
                                     <a href="blog.html" class="btn btn-primary">View All Posts</a>
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -123,20 +126,38 @@
                     </div>
 
                     <!-- Second Blog Post -->
-                    <div class="row gx-0 mb-5 mb-lg-8 align-items-center">
+                    <div class="row gx-0 mb-3 mb-lg-4 align-items-center">
                         <div class="col-xl-8 col-lg-7">
                             <img class="img-fluid mb-3 mb-lg-0" src="{{data.[1].image}}" alt="{{data.[1].title}}" />
                         </div>
                         <div class="col-xl-4 col-lg-5">
                             <div class="featured-text text-center text-lg-left">
-                                <h4>Featured Post</h4>
                                 <h5 class="text-white-50">{{data.[1].title}}</h5>
                                 <p class="text-white-50 mb-0">{{{data.[1].summary}}}</p>
                                 <p class="small text-muted mt-2">{{formatDate data.[1].date}}</p>
                                 <div class="mt-3">
+                                    <!--
                                     <a href="blog.html" class="btn btn-primary">View All Posts</a>
+                                    -->
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Blog Post -->
+                    <div class="row gx-0 mb-5 mb-lg-8 align-items-center">
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="featured-text text-center text-lg-left">
+                                <h5 class="text-white-50">{{data.[2].title}}</h5>
+                                <p class="text-white-50 mb-0">{{{data.[2].summary}}}</p>
+                                <p class="small text-muted mt-2">{{formatDate data.[2].date}}</p>
+                                <div class="mt-3">
+                                  <a href="blog.html" class="btn btn-primary">View All Posts</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <img class="img-fluid mb-3 mb-lg-0" src="{{data.[2].image}}" alt="{{data.[2].title}}" />
                         </div>
                     </div>
                 </script>
