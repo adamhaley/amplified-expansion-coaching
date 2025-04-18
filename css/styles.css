@@ -11266,7 +11266,10 @@ CIRCLES
   z-index: 0.1;
 }
 
-
+#latest-blog {
+  position: relative;
+  z-index: 1;
+}
 
 
 #circle1 {
@@ -11292,3 +11295,5 @@ CIRCLES
 
 #circle5 {
 }
+
+
