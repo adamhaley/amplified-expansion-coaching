@@ -1,1 +1,75 @@
-[{"kind":"calendar#event","etag":"\"3491924246058462\"","id":"7rp3504f8s983rflj6j4kb0bjh","status":"confirmed","htmlLink":"https://www.google.com/calendar/event?eid=N3JwMzUwNGY4czk4M3JmbGo2ajRrYjBiamggamVuYWNhcnBlbnRlckBhbXBsaWZpZWRleHBhbnNpb24uY29t","created":"2025-04-29T21:28:42.000Z","updated":"2025-04-29T21:28:43.029Z","creator":{"email":"jenacarpenter@amplifiedexpansion.com","self":true},"organizer":{"email":"jenacarpenter@amplifiedexpansion.com","self":true},"start":{"dateTime":"2025-04-30T14:30:00-07:00","timeZone":"America/Los_Angeles"},"end":{"dateTime":"2025-04-30T14:45:00-07:00","timeZone":"America/Los_Angeles"},"iCalUID":"7rp3504f8s983rflj6j4kb0bjh@google.com","sequence":0,"attendees":[{"email":"jenacarpenter@amplifiedexpansion.com","organizer":true,"self":true,"responseStatus":"accepted"},{"email":"adamhaley@gmail.com","responseStatus":"needsAction"}],"hangoutLink":"https://meet.google.com/gui-omcf-mxt","conferenceData":{"entryPoints":[{"entryPointType":"video","uri":"https://meet.google.com/gui-omcf-mxt","label":"meet.google.com/gui-omcf-mxt"},{"entryPointType":"more","uri":"https://tel.meet/gui-omcf-mxt?pin=6180112962464","pin":"6180112962464"},{"regionCode":"US","entryPointType":"phone","uri":"tel:+1-413-357-2312","label":"+1 413-357-2312","pin":"962396259"}],"conferenceSolution":{"key":{"type":"hangoutsMeet"},"name":"Google Meet","iconUri":"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png"},"conferenceId":"gui-omcf-mxt"},"reminders":{"useDefault":true},"eventType":"default"}]
+[
+ {
+  "kind": "calendar#event",
+  "etag": "\"3491924246058462\"",
+  "id": "7rp3504f8s983rflj6j4kb0bjh",
+  "status": "confirmed",
+  "htmlLink": "https://www.google.com/calendar/event?eid=N3JwMzUwNGY4czk4M3JmbGo2ajRrYjBiamggamVuYWNhcnBlbnRlckBhbXBsaWZpZWRleHBhbnNpb24uY29t",
+  "created": "2025-04-29T21:28:42.000Z",
+  "updated": "2025-04-29T21:28:43.029Z",
+  "creator": {
+   "email": "jenacarpenter@amplifiedexpansion.com",
+   "self": true
+  },
+  "organizer": {
+   "email": "jenacarpenter@amplifiedexpansion.com",
+   "self": true
+  },
+  "start": {
+   "dateTime": "2025-04-30T14:30:00-07:00",
+   "timeZone": "America/Los_Angeles"
+  },
+  "end": {
+   "dateTime": "2025-04-30T14:45:00-07:00",
+   "timeZone": "America/Los_Angeles"
+  },
+  "iCalUID": "7rp3504f8s983rflj6j4kb0bjh@google.com",
+  "sequence": 0,
+  "attendees": [
+   {
+    "email": "jenacarpenter@amplifiedexpansion.com",
+    "organizer": true,
+    "self": true,
+    "responseStatus": "accepted"
+   },
+   {
+    "email": "adamhaley@gmail.com",
+    "responseStatus": "needsAction"
+   }
+  ],
+  "hangoutLink": "https://meet.google.com/gui-omcf-mxt",
+  "conferenceData": {
+   "entryPoints": [
+    {
+     "entryPointType": "video",
+     "uri": "https://meet.google.com/gui-omcf-mxt",
+     "label": "meet.google.com/gui-omcf-mxt"
+    },
+    {
+     "entryPointType": "more",
+     "uri": "https://tel.meet/gui-omcf-mxt?pin=6180112962464",
+     "pin": "6180112962464"
+    },
+    {
+     "regionCode": "US",
+     "entryPointType": "phone",
+     "uri": "tel:+1-413-357-2312",
+     "label": "+1 413-357-2312",
+     "pin": "962396259"
+    }
+   ],
+   "conferenceSolution": {
+    "key": {
+     "type": "hangoutsMeet"
+    },
+    "name": "Google Meet",
+    "iconUri": "https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png"
+   },
+   "conferenceId": "gui-omcf-mxt"
+  },
+  "reminders": {
+   "useDefault": true
+  },
+  "eventType": "default"
+ }
+]
