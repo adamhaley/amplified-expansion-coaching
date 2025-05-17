@@ -5,7 +5,14 @@ Handlebars.registerHelper('formatDate', function(dateString) {
         weekday: 'long',
         year: 'numeric',
         month: 'long',
-        day: 'numeric',
+        day: 'numeric'
+    });
+});
+
+// Format time helper for Handlebars
+Handlebars.registerHelper('formatTime', function(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleTimeString('en-US', {
         hour: '2-digit',
         minute: '2-digit'
     });

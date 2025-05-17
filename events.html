@@ -65,16 +65,16 @@
             {{#each data}}
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                 <div class="col-lg-6 {{#if @index}}{{#if (mod @index 2)}}order-lg-first{{/if}}{{/if}}">
-                    <img class="img-fluid" src="images/USP_Sunset_Yoga.jpg" alt="{{summary}}" />
+                    <img class="img-fluid" src="images/USP_Sunset_Yoga.jpg" alt="Event" />
                 </div>
                 <div class="col-lg-6 {{#if @index}}{{#if (mod @index 2)}}order-lg-last{{/if}}{{/if}}">
                     <div class="bg-dark text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center {{#if @index}}{{#if (mod @index 2)}}text-lg-right{{else}}text-lg-left{{/if}}{{else}}text-lg-left{{/if}} p-4">
-                                <h4 class="text-white">{{summary}}</h4>
+                                <h3 class="text-primary mb-3">Upcoming Event</h3>
                                 <p class="text-white-50 mb-2">Date: {{formatDate start.dateTime}}</p>
-                                <p class="text-white-50 mb-2">Location: {{location}}</p>
-                                <p class="mb-0 text-white-50">{{description}}</p>
+                                <p class="text-white-50 mb-2">Time: {{formatTime start.dateTime}} - {{formatTime end.dateTime}}</p>
+                                <p class="text-white-50 mb-2">Organizer: {{organizer.email}}</p>
                                 {{#if hangoutLink}}
                                 <a href="{{hangoutLink}}" class="btn btn-primary mt-3" target="_blank">Join Meeting</a>
                                 {{/if}}
