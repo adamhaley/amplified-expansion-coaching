@@ -11220,7 +11220,7 @@ CIRCLES
   border-radius: 50%;
   position: absolute;
   /* box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3); */
-  outline: 1px solid rgba(128, 128, 128, 0.5);
+  outline: 5px solid rgba(128, 128, 128, 0.5);
 
   outline-offset: -5px; 
   z-index: 0;
