@@ -47,15 +47,29 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const navbarLogo = document.getElementById('navbar-logo');
+        const isMobile = window.innerWidth < 992;
         if (!navbarCollapsible) {
             return;
         }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
+        if (isMobile) {
+            if (navbarLogo) {
+                navbarLogo.src = 'images/amplified-expansion-dark.png';
+            }
+            navbarCollapsible.classList.add('navbar-shrink');
+            return;
         }
-
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink');
+            if (navbarLogo) {
+                navbarLogo.src = 'images/amplified-expansion-light.png';
+            }
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink');
+            if (navbarLogo) {
+                navbarLogo.src = 'images/amplified-expansion-dark.png';
+            }
+        }
     };
 
     // Shrink the navbar 
@@ -63,6 +77,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
+
+    // Also update logo on resize
+    window.addEventListener('resize', navbarShrink);
 
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
