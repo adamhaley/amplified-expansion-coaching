@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar on initial load (fix for iPhone/mobile)
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
