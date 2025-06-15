@@ -48,27 +48,27 @@ window.addEventListener('DOMContentLoaded', event => {
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         const navbarLogo = document.getElementById('navbar-logo');
-        const isMobile = window.innerWidth < 992;
+        const isDesktop = window.innerWidth >= 992;
         if (!navbarCollapsible) {
             return;
         }
-        if (isMobile) {
-            if (navbarLogo) {
-                navbarLogo.src = 'images/amplified-expansion-dark.png';
-            }
-            navbarCollapsible.classList.add('navbar-shrink');
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink');
-            if (navbarLogo) {
-                navbarLogo.src = 'images/amplified-expansion-light.png';
+        if (isDesktop) {
+            if (window.scrollY === 0) {
+                navbarCollapsible.classList.remove('navbar-shrink');
+                if (navbarLogo) {
+                    navbarLogo.src = 'images/amplified-expansion-light.png';
+                }
+            } else {
+                navbarCollapsible.classList.add('navbar-shrink');
+                if (navbarLogo) {
+                    navbarLogo.src = 'images/amplified-expansion-dark.png';
+                }
             }
         } else {
-            navbarCollapsible.classList.add('navbar-shrink');
             if (navbarLogo) {
                 navbarLogo.src = 'images/amplified-expansion-dark.png';
             }
+            navbarCollapsible.classList.add('navbar-shrink');
         }
     };
 
