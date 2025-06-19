@@ -11060,6 +11060,10 @@ body {
   .amplified-container{
     margin-top: 10rem;
   }
+
+  .book-your-session{
+    padding-top: 3rem;
+  }
 }
 
 .btn {
