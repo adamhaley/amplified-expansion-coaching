@@ -11057,6 +11057,9 @@ body {
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+  .amplified-container{
+    margin-top: 10rem;
+  }
 }
 
 .btn {
