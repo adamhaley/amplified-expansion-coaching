@@ -10982,7 +10982,7 @@ body {
 }
 
 #mainNav {
-  min-height: 3.5rem;
+  min-height: 6.4rem;
   background-color: #C7CBCD;
 }
 #mainNav .navbar-toggler {
@@ -10994,10 +10994,14 @@ body {
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
-#mainNav .navbar-brand {
+.navbar-brand {
+  z-index: 10000;
+  position:fixed;
+  top:0px;
+  left:100px;
   color: #000;
   font-weight: 700;
-  padding: 0.9rem 0;
+  padding: 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
