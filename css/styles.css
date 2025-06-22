@@ -11033,12 +11033,12 @@ body {
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
-    transition: none;
+    transition: color 0.25s ease;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #fff;
   }
   #mainNav .nav-link:active {
     color: #fff;
