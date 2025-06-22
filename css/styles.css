@@ -10996,8 +10996,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #2a4a5a;
+  border: 1px solid #2a4a5a;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11050,20 +11050,20 @@ body {
     color: #000;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #000;
+    color: #2a4a5a;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #2a4a5a;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #2a4a5a;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #2a4a5a;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #2a4a5a;
   }
   .amplified-container{
     margin-top: 10rem;
