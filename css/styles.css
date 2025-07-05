@@ -10810,7 +10810,7 @@ body {
 }
 
 #mainNav {
-  min-height: 6.4rem;
+  min-height: 6.8rem;
   background-color: #C7CBCD;
 }
 
@@ -10818,6 +10818,9 @@ body {
 @media (max-width: 991.98px) {
   .navbar-brand.d-none.d-lg-block {
     display: none !important;
+  }
+  #mainNav .navbar-nav{
+    padding-top:5rem;
   }
 }
 
@@ -10840,9 +10843,7 @@ body {
   padding: 0;
 }
 
-#mainNav .navbar-nav{
-  padding-top:5rem;
-}
+
 
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
