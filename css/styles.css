@@ -4748,11 +4748,6 @@ textarea.form-control-lg {
   text-decoration: none;
   background-color: var(--bs-list-group-action-hover-bg);
 }
-.list-group-item-action:active {
-  color: var(--bs-list-group-action-active-color);
-  background-color: var(--bs-list-group-action-active-bg);
-}
-
 .list-group-item {
   position: relative;
   display: block;
@@ -10844,6 +10839,11 @@ body {
   font-weight: 700;
   padding: 0;
 }
+
+#mainNav .navbar-nav{
+  padding-top:5rem;
+}
+
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
   outline: none;
