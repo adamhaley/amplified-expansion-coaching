@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', event => {
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         const navbarLogo = document.getElementById('navbar-logo');
-        const isDesktop = window.innerWidth >= 992;
+        const isDesktop = window.innerWidth >= 1200;
         if (!navbarCollapsible) {
             return;
         }
