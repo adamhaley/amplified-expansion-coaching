@@ -10815,7 +10815,7 @@ body {
 }
 
 /* Hide logo on mobile breakpoints */
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .navbar-brand.d-none.d-lg-block {
     display: none !important;
   }
