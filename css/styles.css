@@ -10872,7 +10872,7 @@ body {
   outline: none;
   background-color: transparent;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
