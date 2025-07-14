@@ -3809,6 +3809,7 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+  
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -3903,6 +3904,9 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 1200px) {
+  #amplified-expansion-title {
+    font-size: clamp(2rem, 6.8vw, 6rem) !important;
+  }
   .navbar-expand-xl {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -10843,6 +10847,8 @@ body {
 }
 
 /* Make heading bigger on small screens only */
+
+
 @media (max-width: 767.98px) {
   #amplified-expansion-title {
     font-size: clamp(3rem, 7vw, 8rem) !important;
