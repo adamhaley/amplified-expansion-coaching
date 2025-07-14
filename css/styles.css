@@ -11189,4 +11189,48 @@ CIRCLES
 #circle5 {
 }
 
+/* Scroll margin for anchor targets to account for fixed navbar */
+#about {
+  scroll-margin-top: -14rem;
+}
+
+#blog {
+  scroll-margin-top: -6rem;
+}
+
+#events {
+  scroll-margin-top: -4rem;
+}
+
+#press {
+  scroll-margin-top: -4rem;
+}
+
+#contact {
+  scroll-margin-top: -7rem;
+}
+
+/* Adjust for larger screens where navbar is taller */
+@media (min-width: 1200px) {
+  #about {
+    scroll-margin-top: -8rem;
+  }
+  
+  #blog {
+    scroll-margin-top: -8rem;
+  }
+  
+  #events {
+    scroll-margin-top: -8rem;
+  }
+  
+  #press {
+    scroll-margin-top: -4rem;
+  }
+
+  #contact {
+    scroll-margin-top: -4rem;
+  }
+}
+
 
