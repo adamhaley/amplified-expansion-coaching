@@ -11191,7 +11191,7 @@ CIRCLES
 
 /* Scroll margin for anchor targets to account for fixed navbar */
 #about {
-  scroll-margin-top: -8rem;
+  scroll-margin-top: -7rem;
 }
 
 #blog {
