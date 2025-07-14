@@ -10863,6 +10863,7 @@ body {
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
+  box-shadow: 0 0 0 0.125rem rgba(0, 123, 255, 0.25);
 }
 .navbar-brand {
   z-index: 10000;
