@@ -11120,6 +11120,12 @@ Back to Top Link
 
 .back-to-top-link path{ 
   fill: var(--bs-white-rgb);
+  transition: fill 0.2s ease-in-out;
+}
+
+.back-to-top-link:hover path {
+  fill: #ffffff;
+  filter: brightness(1.2);
 }
 
 /**
