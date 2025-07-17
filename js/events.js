@@ -1,6 +1,10 @@
 // Format date helper for Handlebars
 Handlebars.registerHelper('formatDate', function(dateString) {
-    const date = new Date(dateString);
+    // Ensure dateString is in 'YYYY-MM-DD' format and treat as local date
+    if (!dateString) return '';
+    var parts = dateString.split('-');
+    // new Date(year, monthIndex, day) treats as local time
+    var date = new Date(parts[0], parts[1] - 1, parts[2]);
     return date.toLocaleDateString('en-US', {
         weekday: 'long',
         year: 'numeric',
@@ -9,18 +13,10 @@ Handlebars.registerHelper('formatDate', function(dateString) {
     });
 });
 
-// Format time helper for Handlebars (expects 'HH:mm')
+// Format time helper for Handlebars (expects already formatted time like6:00PM")
 Handlebars.registerHelper('formatTime', function(timeString) {
-    if (!timeString) return '';
-    const [hour, minute] = timeString.split(':');
-    const date = new Date();
-    date.setHours(parseInt(hour, 10));
-    date.setMinutes(parseInt(minute, 10));
-    return date.toLocaleTimeString('en-US', {
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: true
-    });
+    if (!timeString) return ''; // Return as-is since it's already formatted
+    return timeString;
 });
 
 // Modulo helper for alternating layouts
