@@ -9,12 +9,17 @@ Handlebars.registerHelper('formatDate', function(dateString) {
     });
 });
 
-// Format time helper for Handlebars
-Handlebars.registerHelper('formatTime', function(dateString) {
-    const date = new Date(dateString);
+// Format time helper for Handlebars (expects 'HH:mm')
+Handlebars.registerHelper('formatTime', function(timeString) {
+    if (!timeString) return '';
+    const [hour, minute] = timeString.split(':');
+    const date = new Date();
+    date.setHours(parseInt(hour, 10));
+    date.setMinutes(parseInt(minute, 10));
     return date.toLocaleTimeString('en-US', {
         hour: '2-digit',
-        minute: '2-digit'
+        minute: '2-digit',
+        hour12: true
     });
 });
 

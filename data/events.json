@@ -1,75 +1,20 @@
 [
- {
-  "kind": "calendar#event",
-  "etag": "\"3491924246058462\"",
-  "id": "7rp3504f8s983rflj6j4kb0bjh",
-  "status": "confirmed",
-  "htmlLink": "https://www.google.com/calendar/event?eid=N3JwMzUwNGY4czk4M3JmbGo2ajRrYjBiamggamVuYWNhcnBlbnRlckBhbXBsaWZpZWRleHBhbnNpb24uY29t",
-  "created": "2025-04-29T21:28:42.000Z",
-  "updated": "2025-04-29T21:28:43.029Z",
-  "creator": {
-   "email": "jenacarpenter@amplifiedexpansion.com",
-   "self": true
+  {
+    "title": "Sunflower Ritual: Summer Solstice Gathering",
+    "description": "Join us for a magical evening of ritual, meditation, and community as we celebrate the Summer Solstice. All are welcome!",
+    "image": "images/Sunflower_Ritual_Main.jpg",
+    "date": "2025-06-21",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "link": "https://amplifiedexpansion.com/register-sunflower-ritual"
   },
-  "organizer": {
-   "email": "jenacarpenter@amplifiedexpansion.com",
-   "self": true
-  },
-  "start": {
-   "dateTime": "2025-04-30T14:30:00-07:00",
-   "timeZone": "America/Los_Angeles"
-  },
-  "end": {
-   "dateTime": "2025-04-30T14:45:00-07:00",
-   "timeZone": "America/Los_Angeles"
-  },
-  "iCalUID": "7rp3504f8s983rflj6j4kb0bjh@google.com",
-  "sequence": 0,
-  "attendees": [
-   {
-    "email": "jenacarpenter@amplifiedexpansion.com",
-    "organizer": true,
-    "self": true,
-    "responseStatus": "accepted"
-   },
-   {
-    "email": "adamhaley@gmail.com",
-    "responseStatus": "needsAction"
-   }
-  ],
-  "hangoutLink": "https://meet.google.com/gui-omcf-mxt",
-  "conferenceData": {
-   "entryPoints": [
-    {
-     "entryPointType": "video",
-     "uri": "https://meet.google.com/gui-omcf-mxt",
-     "label": "meet.google.com/gui-omcf-mxt"
-    },
-    {
-     "entryPointType": "more",
-     "uri": "https://tel.meet/gui-omcf-mxt?pin=6180112962464",
-     "pin": "6180112962464"
-    },
-    {
-     "regionCode": "US",
-     "entryPointType": "phone",
-     "uri": "tel:+1-413-357-2312",
-     "label": "+1 413-357-2312",
-     "pin": "962396259"
-    }
-   ],
-   "conferenceSolution": {
-    "key": {
-     "type": "hangoutsMeet"
-    },
-    "name": "Google Meet",
-    "iconUri": "https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png"
-   },
-   "conferenceId": "gui-omcf-mxt"
-  },
-  "reminders": {
-   "useDefault": true
-  },
-  "eventType": "default"
- }
+  {
+    "title": "Crystal Grid Healing Workshop",
+    "description": "Experience the power of crystal grids and learn how to create your own for healing and manifestation. Materials provided.",
+    "image": "images/Crystal_Grid_Healing.jpg",
+    "date": "2025-07-10",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "link": "https://amplifiedexpansion.com/register-crystal-grid"
+  }
 ]

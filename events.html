@@ -59,7 +59,7 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Events</h1>
+                        <h1 class="mx-auto my-0 text-uppercase text-white-50">Events</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Join Us for Transformative Experiences</h2>
                     </div>
                 </div>
@@ -67,10 +67,18 @@
         </header>
         <br><br>
         <!-- Events Content -->
-        <section class="projects-section" style="background-color: #162834;">
+        <section class="events-section" style="background-color: #162834; padding: 3rem 0;">
             <div class="container px-4 px-lg-5">
-                <div id="events-container">
-                    <!-- Events will be loaded here -->
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Events Grid -->
+                        <div class="mb-5">
+                            <h2 class="text-center mb-4 text-white-50">Upcoming Events</h2>
+                            <div class="row" id="events-container">
+                                <!-- Handlebars template will populate here -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -78,27 +86,15 @@
         <!-- Events Template -->
         <script id="events-template" type="text/x-handlebars-template">
             {{#each data}}
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6 {{#if @index}}{{#if (mod @index 2)}}order-lg-first{{/if}}{{/if}}">
-                    <img class="img-fluid" src="images/USP_Sunset_Yoga.jpg" alt="Event" />
-                </div>
-                <div class="col-lg-6 {{#if @index}}{{#if (mod @index 2)}}order-lg-last{{/if}}{{/if}}">
-                    <div class="bg-dark text-center h-100 project">
-                        <div class="d-flex h-100 text-white-50 p-4">
-                            <h2 class="text-white-50">Upcoming Events and Opportunities:</h2>
-                            We are currently in the final stages of planning to build our Golden Path Network Retreat
-                            Center here in Southern California and will have exciting updates on that project coming soon!</p>
-                            Stay tuned for all the updates HERE: (link to join Kit mailing list)
-                            Join our AUGUST Aligned Community Challenge – Waitlist Link Here
-                            <!--
-                            <br/>
-                            <a href="https://amplified-expansion.kit.com/3011fb25bc" target="_blank">Join our community on Kit to discover curated collections and recommendations</a>
-                            <br/>
-                            -->
-
-                            
-                            Step into a 10-day Challenge that will guide you in:
-                        </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="{{image}}" alt="{{title}}" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="small text-muted mb-2">{{formatDate date}}</p>
+                        <p class="small text-muted mb-2">{{formatTime startTime}} - {{formatTime endTime}}</p>
+                        <p class="card-text text-black-50">{{description}}</p>
+                        <a href="{{link}}" class="btn btn-primary" target="_blank">More Details</a>
                     </div>
                 </div>
             </div>
