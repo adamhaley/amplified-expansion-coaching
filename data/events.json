@@ -1,11 +1,10 @@
 [
   {
-    "title": "Sunflower Ritual: Summer Solstice Gathering",
+    "title": "Join the Waitlist for Our August Aligned Vision Challenge",
     "description": "Join us for a magical evening of ritual, meditation, and community as we celebrate the Summer Solstice. All are welcome!",
     "image": "images/Sunflower_Ritual_Main.jpg",
-    "date": "2025-06-21",
-    "startTime": "18:00",
-    "endTime": "21:00",
+    "date": "2025-08-21",
+    "time": "6:00PM",
     "link": "https://amplifiedexpansion.com/register-sunflower-ritual"
   },
   {
@@ -13,8 +12,7 @@
     "description": "Experience the power of crystal grids and learn how to create your own for healing and manifestation. Materials provided.",
     "image": "images/Crystal_Grid_Healing.jpg",
     "date": "2025-07-10",
-    "startTime": "14:00",
-    "endTime": "16:00",
+    "time": "2:00PM",
     "link": "https://amplifiedexpansion.com/register-crystal-grid"
   }
-]
+] 
