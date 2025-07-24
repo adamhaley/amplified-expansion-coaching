@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -308,3 +309,89 @@ Session to learn more about how I can support you, wherever you are on your path
     </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <title>Amplified Expansion</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .title-text {
+      font-size: clamp(2rem, 5vw, 6rem);
+      padding: 0 1rem;
+      white-space: normal;
+      line-height: 1.2;
+    }
+    
+    @media (min-width: 768px) {
+      .title-text {
+        white-space: nowrap;
+      }
+    }
+
+    .scroll-container {
+      height: 100vh;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Masthead-->
+        <header class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url('images/USP_Tree_Stars.jpg'); background-size: cover;">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center px-4">
+                        <h1 class="mx-auto my-0 text-uppercase title-text">Amplified Expansion</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-size: clamp(1rem, 2vw, 2rem);">Coming soon..</h2>
+                        <!--
+                        <form class="d-flex flex-column align-items-center gap-3" style="max-width: 500px; margin: 0 auto;" id="emailForm">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" required id="emailInput">
+                                <button class="btn btn-primary" type="submit">Signup</button>
+                            </div>
+                            <div id="formMessage" class="text-white" style="display: none;"></div>
+                        </form>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Add jQuery and form handling script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#emailForm').on('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = $('#emailInput').val();
+                    const $formMessage = $('#formMessage');
+                    
+                    $.ajax({
+                        type: 'POST',
+                        url: 'submit_email.php',
+                        data: { email: email },
+                        success: function(response) {
+                            if (response.success) {
+                                $formMessage.removeClass('text-danger').addClass('text-success').html(response.message).show();
+                                $('#emailInput').val('');
+                            } else {
+                                $formMessage.removeClass('text-success').addClass('text-danger').html(response.message).show();
+                            }
+                        },
+                        error: function() {
+                            $formMessage.removeClass('text-success').addClass('text-danger')
+                                .html('An error occurred. Please try again later.').show();
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
+>>>>>>> master
