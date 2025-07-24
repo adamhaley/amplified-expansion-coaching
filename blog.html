@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Blog for Amplified Expansion Coaching" />
+        <meta name="author" content="Jena Carpenter" />
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <title>Blog - AMPLIFIED EXPANSION</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/birmingham" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Add Handlebars before closing head tag -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <meta property="og:title" content="Amplified Expansion Coaching" />
+        <meta property="og:description" content="Awakening you to your soul purpose. Coaching, events, and community for your highest expansion." />
+        <meta property="og:image" content="images/FullLogo.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://amplifiedexpansion.com/blog.html" />
+        <style>
+          html {
+            scroll-padding-top: 150px;
+          }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-xl-5 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-xl-none align-self-start" href="index.html" style="margin-left:0;">
+                    <img src="images/amplified-expansion-logo-mobile.png" alt="Amplified Expansion Logo" style="height: 8rem; width: auto;" />
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav flex-column flex-xl-row text-center ms-xl-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#page-top">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#press">Press</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#signup">Join Our Network</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Connect</a></li>
+                    </ul>
+                </div>
+            </div>
+        <a class="navbar-brand d-none d-xl-block" href="index.html">
+                <img id="navbar-logo" src="images/amplified-expansion-dark.png" alt="Amplified Expansion Logo" style="height: 200px; width: auto;" />
+            </a>
+        </nav>
+        
+        <!-- Blog Header-->
+        <header class="masthead" style="background-image: url('images/USP_Tree_Stars.jpg'); height: 40vh; min-height: 450px;">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase text-white-50" style="font-size: clamp(2rem, 5vw, 5rem);">Blog</h1>
+                        <p class="text-white-50 mx-auto mt-2 mb-5">Insights, Wisdom & Transformation</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Substack Blog Section -->
+        <section class="blog-section" style="background-color: #162834; padding: 3rem 0;">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Substack Integration Options -->
+                        
+                        <!-- Option 2: Recent Posts Grid -->
+                        <div class="mb-5">
+                            <h2 class="text-center mb-4 text-white-50">Recent Articles</h2>
+                            <div class="row" id="blog-posts">
+                                <!-- Handlebars template will populate here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Handlebars Template -->
+                        <script id="blog-template" type="text/x-handlebars-template">
+                            {{#each data}}
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <img class="card-img-top" src="{{image}}" alt="{{title}}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{title}}</h5>
+                                        <p class="small text-muted mb-2">{{formatDate date}}</p>
+                                        <p class="card-text text-black-50">{{{summary}}}</p>
+                                        <a href="{{link}}" class="btn btn-primary" target="_blank">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </script>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Footer-->
+        <footer class="footer small text-center text-white-50" style="background-color: #162834;">
+            <div class="social d-flex justify-content-center my-5 py-4">
+                <a class="mx-3 p-3" href="https://www.facebook.com/GoldenPathNetwork" target="_new" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-3 p-3" href="https://x.com/JenaLCarpenter" target="_new" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-twitter"></i></a>
+                <a class="mx-3 p-3" href="https://www.instagram.com/jenacarpenter/#" target="_new" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-instagram"></i></a>
+                <a class="mx-3 p-3" href="https://www.youtube.com/@AmplifiedExpansion" target="_new" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-youtube"></i></a>
+                <a class="mx-3 p-3" href="https://www.linkedin.com/in/jena-carpenter-03076428b/" target="_new" style="background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <div class="container px-4 px-lg-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="#" class="text-white-50">Privacy Policy – Terms & Conditions</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="index.html" class="text-white-50">Amplified Expansion</a>
+                    </div>
+                    <div class="col-lg-4">
+                        Copyright © 2025 Amplified Expansion – All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="back-to-top-link in visible">
+            <a href="#">
+                <svg width="1000px" height="1000px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 3L15 11H0L7.5 3Z" fill="#FFF"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Add before closing body tag -->
+        <script src="js/blog.js"></script>
+    </body>
+</html> 
