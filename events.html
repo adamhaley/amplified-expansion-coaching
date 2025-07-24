@@ -87,14 +87,14 @@
         <script id="events-template" type="text/x-handlebars-template">
             {{#each data}}
             <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm d-flex flex-column">
                     <img class="card-img-top" src="{{image}}" alt="{{title}}" style="height: 200px; object-fit: cover;">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">{{title}}</h5>
                         <p class="small text-muted mb-2">{{formatDate date}}</p>
                         <p class="small text-muted mb-2">Time: {{formatTime time}}</p>
                         <p class="card-text text-black-50">{{description}}</p>
-                        <a href="{{link}}" class="btn btn-primary" target="_blank">More Details</a>
+                        <a href="{{link}}" class="btn btn-primary mt-auto" target="_blank">More Details</a>
                     </div>
                 </div>
             </div>
