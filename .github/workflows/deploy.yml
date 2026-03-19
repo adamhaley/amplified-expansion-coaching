@@ -37,4 +37,5 @@ jobs:
           key: ${{ secrets.SSHKEY }}
           script: |
             cd ${{ steps.set-dir.outputs.target_dir }}
+            git checkout -- .scripts/deploy.sh
             .scripts/deploy.sh
