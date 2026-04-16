@@ -2,11 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches:  
-      - master
-      - staging
-  pull_request:
-    branches: 
+    branches:
       - master
       - staging
 
@@ -19,16 +15,12 @@ jobs:
         run: |
           case "${{ github.ref_name }}" in
             master)
-              echo "target_dir=public_html" >> $GITHUB_OUTPUT
+              echo "target_dir=/home/jena/domains/amplifiedexpansion.com/public_html" >> $GITHUB_OUTPUT
               ;;
             staging)
-              echo "target_dir=staging" >> $GITHUB_OUTPUT
-              ;;
-            *)
-              echo "target_dir=unknown" >> $GITHUB_OUTPUT
+              echo "target_dir=/home/jena/domains/staging.amplifiedexpansion.com/public_html" >> $GITHUB_OUTPUT
               ;;
           esac
-      - uses: actions/checkout@v3
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.2.1
         with:
