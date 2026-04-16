@@ -3,5 +3,4 @@ set -e
 
 echo "Deploying .."
 
-git pull
-
+git pull origin master
