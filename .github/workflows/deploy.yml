@@ -15,7 +15,7 @@ jobs:
         run: |
           case "${{ github.ref_name }}" in
             master)
-              echo "target_dir=/home/jena/domains/amplifiedexpansion.com/public_html" >> $GITHUB_OUTPUT
+              echo "target_dir=/home/jena/public_html" >> $GITHUB_OUTPUT
               ;;
             staging)
               echo "target_dir=/home/jena/domains/staging.amplifiedexpansion.com/public_html" >> $GITHUB_OUTPUT
