@@ -28,6 +28,18 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
+            set -euo pipefail
             cd ${{ steps.set-dir.outputs.target_dir }}
-            git fetch origin
+            echo "Host: $(hostname)"
+            echo "Deploy dir: $(pwd)"
+            echo "Branch: ${{ github.ref_name }}"
+            echo "Target SHA: ${{ github.sha }}"
+            git remote -v
+            git fetch origin ${{ github.ref_name }}
             git reset --hard origin/${{ github.ref_name }}
+            current_sha="$(git rev-parse HEAD)"
+            echo "Current SHA: ${current_sha}"
+            if [ "${current_sha}" != "${{ github.sha }}" ]; then
+              echo "Deploy verification failed: expected ${{ github.sha }} but found ${current_sha}" >&2
+              exit 1
+            fi
