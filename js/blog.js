@@ -8,11 +8,26 @@ Handlebars.registerHelper('formatDate', function(dateString) {
     });
 });
 
+function decodeHtmlEntities(str) {
+    if (typeof str !== 'string') return str;
+    const textarea = document.createElement('textarea');
+    textarea.innerHTML = str;
+    return textarea.value;
+}
+
+function normalizePosts(data) {
+    const fields = ['title', 'summary'];
+    (data.data || []).forEach(post => {
+        fields.forEach(field => { post[field] = decodeHtmlEntities(post[field]); });
+    });
+    return data;
+}
+
 // Fetch and render blog posts
 async function loadBlogPosts() {
     try {
         const response = await fetch('/data/blog.json');
-        const data = await response.json();
+        const data = normalizePosts(await response.json());
         
         // Check which page we're on and render accordingly
         if (document.getElementById('blog-posts')) {
