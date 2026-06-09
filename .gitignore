@@ -3,3 +3,5 @@
 __pycache__
 notes-02-20-2025.txt
 node_modules
+.DS_Store
+**/.DS_Store
